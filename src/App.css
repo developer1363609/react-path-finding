@@ -1,0 +1,102 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 150vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+svg{
+  border: 2px solid #ccc;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+svg:hover{
+  cursor: default;
+}
+
+rect{
+  fill: #ddd;
+}
+
+.openList{
+  fill: #bdb;
+}
+
+.closedList{
+  fill: #bdb;
+}
+
+.paths{
+  fill: #99c;
+}
+
+.current{
+  fill: #9999cc;
+}
+
+.wall{
+  fill: #777;
+  stroke: #555;
+  stroke-width: 2;
+}
+
+.startPosition {
+  fill: #d00;
+  stroke: #a11;
+  stroke-width: 2;
+  cursor: grab;
+}
+
+.startPosition.active{
+  fill: #aa1111;
+}
+
+.destinationPosition {
+  fill: #0c0;
+  stroke: #191;
+  stroke-width: 2;
+  cursor: grab;
+}
+
+.destinationPosition.active{
+  fill: #191;
+}
